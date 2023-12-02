@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block heading %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'posts/style.css' %}">
+    <script src="https://kit.fontawesome.com/6bcd034bb1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Caveat:wght@400;500&family=Dancing+Script:wght@500&family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

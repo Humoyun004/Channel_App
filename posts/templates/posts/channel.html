@@ -1,0 +1,41 @@
+{% extends 'posts/base.html' %}
+
+{% block heading %}
+    <title>Posts Page!</title>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="column left">
+                <span class="dot" style="background:#ED594A;"></span>
+                <span class="dot" style="background:#FDD800;"></span>
+                <span class="dot" style="background:#5AC05A;"></span>
+            </div>
+            <div class="column middle">
+                <input type="text" value="https://instagram.com/humoyun04">
+            </div>
+            <div class="column right">
+                <div style="float:right">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+        {% for post in posts %}
+        <div class="card">
+            <img src="{{ post.poster_img.url }}" class="poster_img">
+            <h1 class="poster_header">{{ post.poster_header }}</h1>
+            <div class="scroll-container">
+                <p class="poster_content">{{ post.poster_content }}</p>
+            </div>
+            <span class="poster_date"><i class="fa-regular fa-calendar-days vaqt"></i> {{ post.poster_date|date:"D, Y M" }}</span>
+
+        </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
