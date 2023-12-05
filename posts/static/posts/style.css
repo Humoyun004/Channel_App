@@ -140,12 +140,12 @@ input[type=text] {
     color: red
 }
 
-/*Home Page Animation*/
+/*Home Page*/
 .typing-text {
-  overflow: hidden; /* Обрезаем текст */
-  border-right: .15em solid orange; /* Анимируемый курсор для имитации печатной машинки */
-  white-space: pre-wrap; /* Не допускаем переноса строк */
-  margin: 0 auto; /* Выравниваем по центру для примера */
+  overflow: hidden; /
+  border-right: .15em solid orange; 
+  white-space: pre-wrap; 
+  margin: 0 auto; 
   font-size: 54px;
   animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
 }
